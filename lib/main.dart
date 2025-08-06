@@ -1,4 +1,6 @@
 import 'package:easy_pay/presentation/l10n/gen_l10n/app_localizations.dart';
+import 'package:easy_pay/presentation/themes/app_theme.dart';
+import 'package:easy_pay/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -11,7 +13,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      theme: AppTheme.buildTheme(
+        brightness: Brightness.light,
+        fontFamily: 'Manrope',
+      ),
+      routeInformationProvider: router.routeInformationProvider,
+      routeInformationParser: router.routeInformationParser,
+      routerDelegate: router.routerDelegate,
+      title: 'Easy-pay',
       localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
