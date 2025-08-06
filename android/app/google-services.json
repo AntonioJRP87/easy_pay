@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "235355436609",
+    "project_id": "easy-pay-dd23b",
+    "storage_bucket": "easy-pay-dd23b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235355436609:android:3a6e64598913f2101fb8c0",
+        "android_client_info": {
+          "package_name": "com.example.easy_pay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7mW63n2-Bva_hx1eRBJRIzpp43Lfz-3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

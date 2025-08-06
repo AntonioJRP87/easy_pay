@@ -1,0 +1,30 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "easy-pay-dd23b",
+          "appId": "1:235355436609:android:3a6e64598913f2101fb8c0",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "easy-pay-dd23b",
+          "appId": "1:235355436609:ios:936a72af50ea44741fb8c0",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "easy-pay-dd23b",
+          "configurations": {
+            "android": "1:235355436609:android:3a6e64598913f2101fb8c0",
+            "ios": "1:235355436609:ios:936a72af50ea44741fb8c0"
+          }
+        }
+      }
+    }
+  }
+}
