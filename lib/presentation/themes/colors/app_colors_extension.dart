@@ -1,5 +1,6 @@
-import 'package:easy_pay/presentation/themes/colors/app_default_colors.dart';
 import 'package:flutter/material.dart';
+
+import 'app_colors.dart';
 
 class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
   AppColorsExtension({
