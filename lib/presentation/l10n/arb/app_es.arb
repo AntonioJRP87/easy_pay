@@ -1,3 +1,6 @@
 {
-  "@@locale": "es"
+  "@@locale": "es",
+  "welcome_to_easy_pay": "Bienvenido a Paga-Fácil",
+  "info_welcome": "Gestiona fácilmente los gastos compartidos y lleva un registro de las deudas del grupo.",
+  "get_started": "Empezar"
 }
