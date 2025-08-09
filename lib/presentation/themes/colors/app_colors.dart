@@ -3,6 +3,7 @@ import 'dart:ui';
 class AppColors {
   AppColors({
     required this.primary,
+    required this.onPrimary,
     required this.grayBlue,
     required this.neutral900,
     required this.neutral800,
@@ -15,10 +16,12 @@ class AppColors {
     required this.neutral100,
     required this.neutral50,
     required this.neutral0,
+    required this.semanticError,
   });
 
   //App
   final Color primary;
+  final Color onPrimary;
   final Color grayBlue;
 
   // Neutrals
@@ -34,9 +37,12 @@ class AppColors {
   final Color neutral50;
   final Color neutral0;
 
+  final Color semanticError;
+
   AppColors lerp(AppColors other, double t) {
     return AppColors(
       primary: Color.lerp(primary, other.primary, t) ?? primary,
+      onPrimary: Color.lerp(onPrimary, other.onPrimary, t) ?? onPrimary,
       grayBlue: Color.lerp(grayBlue, other.grayBlue, t) ?? grayBlue,
       neutral900: Color.lerp(neutral900, other.neutral900, t) ?? neutral900,
       neutral800: Color.lerp(neutral800, other.neutral800, t) ?? neutral800,
@@ -49,6 +55,8 @@ class AppColors {
       neutral100: Color.lerp(neutral100, other.neutral100, t) ?? neutral100,
       neutral50: Color.lerp(neutral50, other.neutral50, t) ?? neutral50,
       neutral0: Color.lerp(neutral0, other.neutral0, t) ?? neutral0,
+      semanticError:
+          Color.lerp(semanticError, other.semanticError, t) ?? semanticError,
     );
   }
 }

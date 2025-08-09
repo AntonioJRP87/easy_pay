@@ -1,5 +1,5 @@
 import 'package:easy_pay/presentation/extensions/context_extension.dart';
-import 'package:easy_pay/presentation/widgets/elevated_button/custom_elevated_button.dart';
+import 'package:easy_pay/presentation/widgets/buttons/custom_elevated_button.dart';
 import 'package:easy_pay/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -43,7 +43,7 @@ class WelcomePage extends StatelessWidget {
                 title: context.localizations.get_started,
                 width: double.infinity,
                 onPressed: () {
-                  context.pushNamed(RoutersName.signIn);
+                  context.goNamed(RoutersName.signIn);
                 },
               ),
             ),

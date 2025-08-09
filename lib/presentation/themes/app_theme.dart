@@ -40,6 +40,7 @@ class AppTheme {
       textSelectionTheme: TextSelectionThemeData(
         cursorColor: colors.primary,
         selectionHandleColor: colors.primary,
+        selectionColor: colors.onPrimary,
       ),
     );
   }

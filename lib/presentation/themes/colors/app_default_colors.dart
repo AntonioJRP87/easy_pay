@@ -5,6 +5,7 @@ class AppDefaultColors {
   static AppColors get colors {
     return AppColors(
       primary: const Color(0xFF38761D),
+      onPrimary: const Color(0xFF49E104),
       grayBlue: const Color(0xFF637387),
       neutral900: const Color(0xFF212121),
       neutral800: const Color(0xFF303030),
@@ -15,8 +16,9 @@ class AppDefaultColors {
       neutral300: const Color(0xFFB3B3B3),
       neutral200: const Color(0xFFC6C6C6),
       neutral100: const Color(0xFFDEDEDE),
-      neutral50: const Color(0xFFF7F7F7),
+      neutral50: const Color(0xFFF0F2F5),
       neutral0: const Color(0xFFFFFFFF),
+      semanticError: const Color(0xFFEF4444),
     );
   }
 }

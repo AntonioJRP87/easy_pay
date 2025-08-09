@@ -5,10 +5,12 @@ import 'package:easy_pay/routes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:easy_pay/app/di/app_di.dart' as di;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await di.init();
   runApp(const MyApp());
 }
 

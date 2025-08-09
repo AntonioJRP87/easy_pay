@@ -5,6 +5,7 @@ import 'app_colors.dart';
 class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
   AppColorsExtension({
     required this.primary,
+    required this.onPrimary,
     required this.grayBlue,
     required this.neutral900,
     required this.neutral800,
@@ -17,9 +18,11 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
     required this.neutral100,
     required this.neutral50,
     required this.neutral0,
+    required this.semanticError,
   });
 
   final Color primary;
+  final Color onPrimary;
   final Color grayBlue;
 
   final Color neutral900;
@@ -34,9 +37,12 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
   final Color neutral50;
   final Color neutral0;
 
+  final Color semanticError;
+
   factory AppColorsExtension.from(AppColors colors) {
     return AppColorsExtension(
       primary: colors.primary,
+      onPrimary: colors.onPrimary,
       grayBlue: colors.grayBlue,
       neutral900: colors.neutral900,
       neutral800: colors.neutral800,
@@ -49,12 +55,14 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
       neutral100: colors.neutral100,
       neutral50: colors.neutral50,
       neutral0: colors.neutral0,
+      semanticError: colors.semanticError,
     );
   }
 
   @override
   AppColorsExtension copyWith({
     Color? primary,
+    Color? onPrimary,
     Color? grayBlue,
     Color? neutral900,
     Color? neutral800,
@@ -67,9 +75,11 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
     Color? neutral100,
     Color? neutral50,
     Color? neutral0,
+    Color? semanticError,
   }) {
     return AppColorsExtension(
       primary: primary ?? this.primary,
+      onPrimary: onPrimary ?? this.onPrimary,
       grayBlue: grayBlue ?? this.grayBlue,
       neutral900: neutral900 ?? this.neutral900,
       neutral800: neutral800 ?? this.neutral800,
@@ -82,6 +92,7 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
       neutral100: neutral100 ?? this.neutral100,
       neutral50: neutral50 ?? this.neutral50,
       neutral0: neutral0 ?? this.neutral0,
+      semanticError: semanticError ?? this.semanticError,
     );
   }
 
@@ -91,6 +102,7 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
 
     return AppColorsExtension(
       primary: Color.lerp(primary, other.primary, t) ?? primary,
+      onPrimary: Color.lerp(onPrimary, other.onPrimary, t) ?? onPrimary,
       grayBlue: Color.lerp(grayBlue, other.grayBlue, t) ?? grayBlue,
       neutral900: Color.lerp(neutral900, other.neutral900, t) ?? neutral900,
       neutral800: Color.lerp(neutral800, other.neutral800, t) ?? neutral800,
@@ -103,6 +115,8 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
       neutral100: Color.lerp(neutral100, other.neutral100, t) ?? neutral100,
       neutral50: Color.lerp(neutral50, other.neutral50, t) ?? neutral50,
       neutral0: Color.lerp(neutral0, other.neutral0, t) ?? neutral0,
+      semanticError:
+          Color.lerp(semanticError, other.semanticError, t) ?? semanticError,
     );
   }
 }
